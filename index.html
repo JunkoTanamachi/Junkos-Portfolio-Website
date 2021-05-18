@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Junko's PortFolioWebsite</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="script.css" />
+	
+</head>
+
+<body>
+	<div>
+	   
+	    <header><a href="index.html"><img src="image/LogoJunko.png" alt="Logo of Junko"></a></header>
+		<nav>
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li class="here"><a href="index.html">Home</a></li>
+				<li><a href="project1.html">Posters</a></li>
+			    <li><a href="project2.html">Card/Package</a></li>
+				<li><a href="project3.html">UI &amp; Web</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<section style="text-align: center">
+			<img src="image/animated_gif_junko.gif" height="300px" alt="photo of Hello">
+			<img src="image/Junko-01.png" height="300px" alt="photo of Junko">
+			<h1>Hello! I'm Junko, graphic designer.</h1>
+			<p class="introduction">This website is a portfolio of my artworks made in Diploma of Graphic Design at TAFE.<br>However, let me introduce myself as I have an experience at the industry as a graphic designer. In my previous job, I created food package labels, printing in house, taking commercial product photos, putting them in our catalogue and online shopping website. Also I prepared for the trade show at the ICC Sydney. I love thinking about design!</p>
+			<img src="image/work-place.png" alt="photo of workplace">
+		    <img src="image/Pink-Salt-Flakes-180g.png" alt="photo of product">
+		</section>
+		
+		<footer>
+			<p>Follow us in Social Media: 
+				<a href="#" target="_blank">Facebook</a> |
+				<a href="#" target="_blank">Twitter</a> |
+				<a href="#" target="_blank">Instagram</a>
+				<br>
+				Copyright 2021 | Website designed by Junko Tanamachi
+			</p>
+		</footer>
+	
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	  
+<script>
+    $("nav ul li:first-child" ).click(function(e) {
+            $("nav ul li").toggleClass("show");     
+        e.preventDefault();
+    });
+</script>
+	
+ <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	
+</body>
+</html>

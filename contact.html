@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Junko's PortFolioWebsite</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="script.css" />
+	
+</head>
+
+<body>
+	<a name="top"></a>
+	<div>
+	   
+	    <header><a href="index.html"><img src="image/LogoJunko.png" alt="Logo of Junko"></a></header>
+		<nav>
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="project1.html">Posters</a></li>
+			    <li><a href="project2.html">Card/Package</a></li>
+				<li><a href="project3.html">UI &amp; Web</a></li>
+				<li class="here"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class="enquiry">
+			<h1>ONLINE ENQUIRY</h1>
+			<p>If you are interested in my work, Please send us message.</p>
+			
+			<form action="mailto:junko.tanamachi@gmail.com" method="post" enctype="text/plain">
+				<label>Name</label><br>
+				<input type="text" name="Name" placeholder="Please enter name"><br>
+				<label>Phone</label><br>
+				<input type="tel" name="Phone" placeholder="Please enter phone number"><br>
+				<label>Email</label><br>
+				<input type="email" name="Email" placeholder="Please enter email"><br>
+				<label>Place of Interest</label><br>
+				<select name="Place of Interest">
+					<option>Please select</option>
+					<option>Logo &amp; Branding</option>
+					<option>Illustration</option>
+					<option>Package Design</option>
+					<option>Web Design</option>
+					<option>Other</option>
+				</select><br>
+				<label>Message</label><br>
+				<textarea name="Message" placeholder="Please enter message"></textarea><br>
+				<input type="submit">
+			</form>
+			</div>
+			
+		</main>
+		<aside>
+			<div class="aside">
+			<table border="0" bgcolor="white" align="center" cellpadding="10" cellspacing="0">
+		    <tr>
+			<th align="left">NAME</th>
+			<td>Junko Tanamachi</td>
+		    </tr>
+		    <tr>
+			<th align="left">ADDRESS</th>
+			<td>36 Tangerine Dr Quakers Hill NSW 2763</td>
+		    </tr>
+		    <tr>
+			<th align="left">Phone</th>
+			<td><a href="tel:0490657964" style="text-decoration: underline">0490-657-964</a></td>
+		    </tr>
+		    <tr>
+			<th align="left">E-Mail</th>
+			<td><a href="mailto:junko.tanamachi@gmail.com" style="text-decoration: underline">junko.tanamachi@gmail.com</a></td>
+		    </tr>
+		    </table>
+				
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.3140941181728!2d150.911139760573!3d-33.72669326922194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129f2bc59cc639%3A0x8617a88984dd0477!2s36%20Tangerine%20Dr%2C%20Quakers%20Hill%20NSW%202763!5e0!3m2!1sen!2sau!4v1621249662448!5m2!1sen!2sau" width="390" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			
+			</div>
+		</aside>
+		<footer>
+			<p>Follow us in Social Media: 
+				<a href="#" target="_blank">Facebook</a> |
+				<a href="#" target="_blank">Twitter</a> |
+				<a href="#" target="_blank">Instagram</a>
+				<br>
+				Copyright 2021 | Website designed by Junko Tanamachi
+			</p>
+		</footer>
+	
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	  
+<script>
+    $("nav ul li:first-child" ).click(function(e) {
+            $("nav ul li").toggleClass("show");     
+        e.preventDefault();
+    });
+</script>
+	
+ <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	
+</body>
+</html>
